@@ -1,0 +1,39 @@
+// Variables
+$font-circular: "CircularStd", sans-serif;
+$font-mono: "Space Mono", monospace;
+$font-number: "Nanum Pen Script", cursive;
+$border-radius: 7.29px;
+
+$color-bg-net: conic-gradient(
+    from 90deg at 1px 1px,
+    #1c1c28 90deg,
+    #29293d 0
+  ) -2px -2px/25px 25px;
+$color-hover: #393953;
+$color-border: #393953;
+$gradient-border: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.5) 0%,
+  rgba(255, 255, 255, 0) 100%
+);
+$gradient-brand: linear-gradient(
+  325.79deg,
+  #6966ff 24.5%,
+  rgba(105, 102, 255, 0.36) 117.69%
+);
+
+// Accent colors
+$color-accent-brand: #6966ff;
+$color-accent-brand-hover: #6c83ff;
+$color-accent-red: #e45555;
+$color-accent-green: #16b57f;
+
+// Background colors
+$color-bg-primary: #1c1c28;
+$color-bg-secondary: #393953;
+$color-bg-secondary-hover: #4f4c64;
+
+// Text colors
+$color-text-primary: #ffffff;
+$color-text-secondary: #c8c7d8;
+$color-text-tertiary: #a59eba;

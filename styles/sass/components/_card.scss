@@ -1,0 +1,78 @@
+@mixin initial-card($width, $height) {
+  background-color: $color-bg-secondary;
+  border-radius: 16px;
+  border: 1px solid $gradient-border;
+  transition: background-color 0.3s;
+  width: $width;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    background-color: $color-bg-secondary-hover;
+  }
+}
+
+.card {
+  @include initial-card(256px, 480px);
+  &--subtext {
+    @include text-mono-md;
+  }
+
+  &__header {
+    padding: 16px;
+  }
+
+  &__content {
+    padding: 16px;
+    flex: 1;
+  }
+
+  &__footer {
+    padding: 16px;
+  }
+
+  &.card--blog {
+    height: unset;
+    .card {
+      &__content {
+        height: 128px;
+        & > *:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &.card--process {
+    position: relative;
+    height: 320px;
+
+    .card--process {
+      &-sketch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-80%);
+      }
+
+      &-num {
+        display: inline-block;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: center;
+        font-family: $font-number;
+      }
+    }
+  }
+
+  @for $i from 1 through 360 {
+    &--rotate-#{$i} {
+      transform: rotate(#{$i}deg);
+    }
+    &--rotate-#{$i}-reverse {
+      transform: rotate(-#{$i}deg);
+    }
+  }
+}

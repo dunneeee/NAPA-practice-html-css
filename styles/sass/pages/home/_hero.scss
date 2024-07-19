@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+  &__header {
+    margin-top: 40px;
+  }
+
+  &--title-ext {
+    position: relative;
+  }
+
+  &--line {
+    position: absolute;
+    bottom: calc(-50% - 8px);
+    left: 0;
+    width: 100%;
+  }
+
+  &--arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    & > img {
+      margin: 0 auto;
+    }
+  }
+}

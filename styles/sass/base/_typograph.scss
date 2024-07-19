@@ -1,0 +1,184 @@
+/* Space Mono font */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+/* Nanum Pen Script font */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+/* CircularStd font */
+@font-face {
+  font-family: "CircularStd";
+  src: url("../../../assets/fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../../../assets/fonts/CircularStd-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("../../../assets/fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Typography */
+
+@mixin typography(
+  $font-size,
+  $font-weight,
+  $line-height,
+  $letter-spacing,
+  $text-align: center,
+  $color: $color-text-primary,
+  $font-family: $font-circular
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  text-align: $text-align;
+  font-family: $font-family;
+}
+// Heading hero
+h1 {
+  @include typography(40px, 700, 48px, -0.021em);
+}
+
+// Heading xl
+h2 {
+  @include typography(32px, 700, 40px, -0.022em);
+}
+
+// Heading lg
+h3 {
+  @include typography(24px, 700, 32px, -0.017em);
+}
+
+// Heading md
+h4 {
+  @include typography(20px, 700, 32px, -0.017em, left);
+}
+// Heading sm
+h5 {
+  @include typography(16px, 700, 24px, -0.011em, left);
+}
+
+@mixin text-paragraph-lg {
+  @include typography(16px, 400, 24px, -0.011em);
+}
+
+@mixin text-paragraph-md {
+  @include typography(14px, 450, 20px, -0.006em, left);
+}
+
+@mixin text-paragraph-sm {
+  @include typography(12px, 700, 16px, 0);
+}
+
+@mixin text-mono-xl {
+  @include typography(20px, 400, 24px, 0, center, $font-mono);
+}
+
+@mixin text-mono-lg {
+  @include typography(
+    16px,
+    400,
+    24px,
+    0,
+    center,
+    $color-text-secondary,
+    $font-mono
+  );
+}
+
+@mixin text-mono-md {
+  @include typography(
+    14px,
+    400,
+    24px,
+    0,
+    left,
+    $color-text-tertiary,
+    $font-mono
+  );
+}
+
+@mixin text-mono-sm {
+  @include typography(14px, 400, 20px, 0, left, $font-mono);
+}
+
+@mixin text-label {
+  @include typography(14px, 500, 20px, -0.011em);
+}
+
+@mixin text-link-lg {
+  @include typography(
+    16px,
+    400,
+    24px,
+    -0.011em,
+    center,
+    null,
+    $color-accent-brand
+  );
+}
+
+.text {
+  &--paragraph-lg {
+    @include text-paragraph-lg;
+  }
+
+  &--paragraph-md {
+    @include text-paragraph-md;
+  }
+
+  &--paragraph-sm {
+    @include text-paragraph-sm;
+  }
+
+  &--mono-xl {
+    @include text-mono-xl;
+  }
+
+  &--mono-lg {
+    @include text-mono-lg;
+  }
+
+  &--mono-md {
+    @include text-mono-md;
+  }
+
+  &--mono-sm {
+    @include text-mono-sm;
+  }
+
+  &--label {
+    @include text-label;
+  }
+
+  &--link-lg {
+    @include text-link-lg;
+  }
+
+  &-brand {
+    color: $color-accent-brand;
+  }
+
+  &-primary {
+    color: $color-text-primary;
+  }
+
+  &-secondary {
+    color: $color-text-secondary;
+  }
+
+  &-tertiary {
+    color: $color-text-tertiary;
+  }
+}

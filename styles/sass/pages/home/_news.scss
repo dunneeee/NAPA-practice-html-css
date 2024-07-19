@@ -1,0 +1,14 @@
+.news {
+  &--title {
+    position: relative;
+  }
+
+  &--title-sparkle {
+    position: absolute;
+    right: 0;
+    transform: translateX(calc(100% - 8px));
+    top: calc(-100% + 8px);
+    width: 29px;
+    height: 28px;
+  }
+}

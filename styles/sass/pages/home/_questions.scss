@@ -1,0 +1,14 @@
+.question {
+  &--title-ext {
+    position: relative;
+  }
+
+  &--sketch-oval {
+    position: absolute;
+    left: 0;
+    top: 0;
+    & > img {
+      transform: scale(1.3);
+    }
+  }
+}

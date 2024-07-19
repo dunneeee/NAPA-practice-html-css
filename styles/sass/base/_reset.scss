@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-circular;
+  @include text-paragraph-md;
+  background: $color-bg-net;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  @include text-link-lg;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.icon-xs {
+  width: 16px;
+  height: 16px;
+}

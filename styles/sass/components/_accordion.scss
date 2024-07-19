@@ -1,0 +1,11 @@
+.accordion {
+  padding: 17px 0;
+  border: 1px solid $color-border;
+  border-left: transparent;
+  border-right: transparent;
+  &__trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

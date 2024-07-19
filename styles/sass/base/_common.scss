@@ -1,0 +1,102 @@
+@mixin generate-margins() {
+  @for $i from 0 through 20 {
+    .m-#{$i} {
+      margin: $i * 4px;
+    }
+    .mt-#{$i} {
+      margin-top: $i * 4px;
+    }
+    .mr-#{$i} {
+      margin-right: $i * 4px;
+    }
+    .mb-#{$i} {
+      margin-bottom: $i * 4px;
+    }
+    .ml-#{$i} {
+      margin-left: $i * 4px;
+    }
+    .mx-#{$i} {
+      margin-left: $i * 4px;
+      margin-right: $i * 4px;
+    }
+    .my-#{$i} {
+      margin-top: $i * 4px;
+      margin-bottom: $i * 4px;
+    }
+  }
+}
+
+@include generate-margins();
+
+@mixin generate-paddings() {
+  @for $i from 0 through 20 {
+    .p-#{$i} {
+      padding: $i * 4px;
+    }
+    .pt-#{$i} {
+      padding-top: $i * 4px;
+    }
+    .pr-#{$i} {
+      padding-right: $i * 4px;
+    }
+    .pb-#{$i} {
+      padding-bottom: $i * 4px;
+    }
+    .pl-#{$i} {
+      padding-left: $i * 4px;
+    }
+    .px-#{$i} {
+      padding-left: $i * 4px;
+      padding-right: $i * 4px;
+    }
+    .py-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+  }
+}
+
+@include generate-paddings();
+
+.w {
+  &-full {
+    width: 100%;
+  }
+
+  &-screen {
+    width: 100vw;
+  }
+
+  &-auto {
+    width: auto;
+  }
+}
+
+.h {
+  &-full {
+    height: 100%;
+  }
+
+  &-screen {
+    height: 100vh;
+  }
+
+  &-auto {
+    height: auto;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-y {
+    display: flex;
+    align-items: center;
+  }
+
+  &-x {
+    display: flex;
+    justify-content: center;
+  }
+}

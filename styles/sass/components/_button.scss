@@ -1,0 +1,51 @@
+.btn {
+  @include text-label;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  padding: 12px 16px;
+  transition: background-color 0.3s;
+  &.btn {
+    &--brand {
+      background-color: $color-accent-brand;
+      &:hover {
+        background-color: $color-accent-brand-hover;
+      }
+    }
+
+    &--secondary {
+      background-color: $color-bg-secondary;
+      &:hover {
+        background-color: $color-bg-secondary-hover;
+      }
+    }
+
+    &--ghost {
+      background-color: transparent;
+      color: $color-text-secondary;
+      &:hover {
+        background-color: $color-bg-secondary;
+        color: $color-text-primary;
+      }
+    }
+
+    &--link {
+      background-color: transparent;
+      color: $color-accent-brand;
+      &:hover {
+        background-color: $color-bg-secondary;
+      }
+    }
+  }
+
+  &--icon {
+    &-left {
+      margin-right: 12px;
+    }
+
+    &-right {
+      margin-left: 12px;
+    }
+  }
+}

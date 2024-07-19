@@ -1,4 +1,4 @@
-@mixin initial-card($width, $height) {
+@mixin initial-card($height, $width: 100%) {
   background-color: $color-bg-secondary;
   border-radius: 16px;
   border: 1px solid $gradient-border;
@@ -14,9 +14,15 @@
 }
 
 .card {
-  @include initial-card(256px, 480px);
+  @include initial-card(480px);
   &--subtext {
     @include text-mono-md;
+  }
+
+  &__img {
+    height: 136px;
+    background-color: $color-bg-img;
+    border-radius: 16px;
   }
 
   &__header {
@@ -28,12 +34,23 @@
     flex: 1;
   }
 
+  &__content-text {
+    @include text-paragraph-md;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:has(&__img) &__content-text {
+    height: 60px;
+  }
+
   &__footer {
     padding: 16px;
   }
 
   &.card--blog {
     height: unset;
+    width: 100%;
     .card {
       &__content {
         height: 128px;

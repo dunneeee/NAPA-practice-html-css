@@ -100,3 +100,16 @@
     justify-content: center;
   }
 }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &--wrap {
+    white-space: normal;
+  }
+}
+
+.flex {
+  display: flex;
+}

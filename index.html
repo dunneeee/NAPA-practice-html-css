@@ -8,13 +8,32 @@
   </head>
   <body>
     <!-- Header navbar -->
-    <header class="container">
+    <header class="container container--fluid">
       <nav class="topbar">
         <div class="logo">
           <img src="./assets/imgs/logo.png" alt="logo" height="48" width="80" />
         </div>
         <div class="topbar__right">
-          <div class="btn btn--brand topbar--btn">Apply</div>
+          <ul class="topbar__navigations mr-2">
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md">Discover initiatives</a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> Funded grants </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> Program expenses </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> Blog </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> FAQ</a>
+            </li>
+          </ul>
+          <div class="btn btn--brand topbar--btn">
+            <span class="topbar--btn-text">Apply</span>
+          </div>
           <div class="topbar--more-icon">
             <img
               src="./assets/icons/fi_menu.svg"
@@ -30,7 +49,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero container py-10">
+      <section class="hero container container--lg py-10">
         <!-- Hero header -->
         <div class="hero__header">
           <h1>
@@ -38,14 +57,23 @@
             <span class="hero--title-ext"
               >grants
               <div class="hero--line">
-                <img src="./assets/imgs/sketched/hero-line.svg" alt="line" />
+                <picture>
+                  <source
+                    srcset="./assets/imgs/sketched/hero-line-desktop.svg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./assets/imgs/sketched/hero-line.svg"
+                    alt="sketch-line"
+                  />
+                </picture>
               </div>
             </span>
           </h1>
         </div>
 
         <!-- Hero button -->
-        <div class="hero__btns mt-10">
+        <div class="hero__btns mt-10 mx-auto">
           <button class="btn btn--secondary mb-4 w-full">Discover RFPs</button>
           <button class="btn btn--brand mb-4 w-full">
             Apply for grant
@@ -58,7 +86,7 @@
         </div>
 
         <!-- Hero count -->
-        <div class="hero__count mt-10">
+        <div class="hero__count mt-10 max-w-202 mx-auto">
           <div class="mb-8">
             <p class="text--mono-xl">100+</p>
             <p class="text--mono-lg">projects funded</p>
@@ -79,9 +107,9 @@
       </section>
 
       <!-- Feature grants -->
-      <section class="feature container py-10">
+      <section class="feature py-10">
         <!-- Feature header -->
-        <div class="feature__header">
+        <div class="feature__header max-w-150 container--lg container">
           <h3 class="mb-4">Projects built with grants</h3>
           <p class="text--paragraph-lg text-secondary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -90,7 +118,7 @@
         </div>
 
         <!-- Feature link to view all -->
-        <div class="feature__link mt-6">
+        <div class="feature__link mt-6 container container--lg center-x">
           <a href="#" class="text--link-lg btn btn--link">
             View all funded projects
             <svg
@@ -316,9 +344,9 @@
       </section>
 
       <!-- What's news -->
-      <section class="news container py-10">
+      <section class="news py-10 container container--lg">
         <!-- News header -->
-        <div class="news__header">
+        <div class="news__header max-w-150 mx-auto">
           <h3>
             <span class="news--title"
               >What’s new?
@@ -336,7 +364,7 @@
         </div>
 
         <!-- News link to view all -->
-        <div class="news__link">
+        <div class="news__link center-x mt-6">
           <a href="#" class="btn btn--link">
             Read more on our blog
             <svg
@@ -366,8 +394,8 @@
         </div>
 
         <!-- News blog list -->
-        <div class="news-blog mt-10">
-          <div class="list-card">
+        <div class="news-blog mt-10 max-w-202 mx-auto">
+          <div class="news-blog__list-card">
             <div class="card card--blog mb-6">
               <div class="card-img">
                 <img src="./assets/imgs/home/round-9.png" alt="round 9" />
@@ -398,7 +426,7 @@
       </section>
 
       <!-- Frequently asked questions -->
-      <section class="question container py-10">
+      <section class="question container container--lg py-10">
         <!-- Question header -->
         <div class="question__header">
           <h3 class="mb-6">
@@ -420,7 +448,7 @@
         </div>
 
         <!-- Question accordion -->
-        <div class="question-accordions mt-10">
+        <div class="question-accordions mt-10 max-w-202 mx-auto">
           <div class="accordion">
             <div class="accordion__trigger">
               <h3 class="accordion--title">How do i apply?</h3>
@@ -455,9 +483,9 @@
       </section>
 
       <!-- Application process -->
-      <section class="application container py-10">
+      <section class="application py-10">
         <!-- Application header -->
-        <div class="application__header">
+        <div class="application__header max-w-150 container container--lg">
           <h3 class="mb-6">
             Application
             <span class="application--title-ext"
@@ -477,10 +505,50 @@
         </div>
 
         <!-- Process -->
-        <div class="application__processes mt-10">
+        <div class="application__processes container container--fluid mt-10">
           <div class="card card--process">
             <div class="card__header">
               <h3 class="card--process-num">1</h3>
+            </div>
+            <div class="card__content">
+              <h3 class="mb-3">Apply</h3>
+              <p>
+                Submit a complete application to the dYdX Grants Team including
+                as many details as possible about the proposed idea and their
+                background.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card--process">
+            <div class="card-process--right-arrow">
+              <img
+                src="./assets/imgs/sketched/sketch-right-arrow.svg"
+                alt="right-arrow"
+              />
+            </div>
+            <div class="card__header">
+              <h3 class="card--process-num">2</h3>
+            </div>
+            <div class="card__content">
+              <h3 class="mb-3">Apply</h3>
+              <p>
+                Submit a complete application to the dYdX Grants Team including
+                as many details as possible about the proposed idea and their
+                background.
+              </p>
+            </div>
+          </div>
+
+          <div class="card card--process">
+            <div class="card-process--left-arrow">
+              <img
+                src="./assets/imgs/sketched/sketch-left-arrow.svg"
+                alt="left-arrow"
+              />
+            </div>
+            <div class="card__header">
+              <h3 class="card--process-num">3</h3>
             </div>
             <div class="card__content">
               <h3 class="mb-3">Apply</h3>
@@ -495,7 +563,7 @@
       </section>
 
       <!-- CTA -->
-      <section class="cta__wrapper container py-10">
+      <section class="cta__wrapper container container--xl py-10">
         <div class="cta">
           <p class="cta__paragraph mb-2">Have a project in mind?</p>
           <div class="cta__text mb-10">
@@ -530,100 +598,105 @@
         </div>
       </section>
 
-      <footer class="footer container py-10">
+      <footer class="footer container container--xl py-10">
         <div class="footer__logo">
           <img src="./assets/imgs/logo/logo-circle.svg" alt="logo circle" />
         </div>
 
         <ul class="footer__content mt-8">
-          <li class="text--mono-md mb-6">About</li>
-          <li class="text--mono-md mb-6">FAQ</li>
-          <li class="text--mono-md mb-6">About</li>
-          <li class="text--mono-md mb-6">Brand assets</li>
-          <li class="text--mono-md mb-6 center-y">
-            dYdX Foundation
-            <div class="ml-2">
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_2352_31465)">
-                  <path
-                    d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.5 1.5H10.5V4.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5 7L10.5 1.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2352_31465">
-                    <rect width="12" height="12" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+          <li class="mb-6"><a href="" class="text--mono-md">About</a></li>
+          <li class="mb-6"><a href="" class="text--mono-md">FAQ</a></li>
+          <li class="mb-6"><a href="" class="text--mono-md">About</a></li>
+          <li class="mb-6">
+            <a href="" class="text--mono-md">Brand assets</a>
           </li>
-          <li class="text--mono-md mb-8 center-y">
-            dYdX trading
-
-            <div class="ml-2">
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_2352_31465)">
-                  <path
-                    d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.5 1.5H10.5V4.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5 7L10.5 1.5"
-                    stroke="#C8C7D8"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2352_31465">
-                    <rect width="12" height="12" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+          <li class="mb-6">
+            <a href="" class="text--mono-md center-y">
+              dYdX Foundation
+              <div class="ml-2">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2352_31465)">
+                    <path
+                      d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.5 1.5H10.5V4.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5 7L10.5 1.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2352_31465">
+                      <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
           </li>
-          <li class="center-y">
+          <li class="mb-6">
+            <a href="" class="text--mono-md center-y">
+              dYdX Training
+              <div class="ml-2">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2352_31465)">
+                    <path
+                      d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.5 1.5H10.5V4.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5 7L10.5 1.5"
+                      stroke="#C8C7D8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2352_31465">
+                      <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="center-y footer__last-icons">
             <div class="mr-8">
               <svg
                 width="16"
@@ -743,67 +816,5 @@
     const applicationProcessContainer = document.querySelector(
       ".application__processes"
     );
-
-    const processRaw = [
-      {
-        title: "Apply",
-        content:
-          "Submit a complete application to the dYdX Grants Team including as many details as possible about the proposed idea and their background. ",
-      },
-      {
-        title: "Interview",
-        content:
-          "If your application is selected, the dYdX Grants will conduct 1-2 interviews to collect more information on the Applicant's background and the proposal.",
-      },
-      {
-        title: "Grant offer",
-        content:
-          "The dYdX Grants team will determine if the proposal fits into the grant program. A vesting schedule and timeline for product development reports will also be determined in the offer;",
-      },
-    ];
-
-    const getProcessArrow = (index) => {
-      switch (index) {
-        case 1:
-          return `<div class='card--process-sketch' style="left: 59px" >
-            <img
-                  src="./assets/imgs/sketched/sketch-right-arrow.svg"
-                  alt="sketch-right-arrow"
-                />
-            </div>`;
-        case 2:
-          return `<div class='card--process-sketch' style="" >
-            <img
-                  src="./assets/imgs/sketched/sketch-left-arrow.svg"
-                  alt="sketch-left-arrow"
-                />
-            </div>`;
-        default:
-          return "";
-      }
-    };
-
-    applicationProcessContainer.innerHTML = processRaw
-      .map(
-        (data, index) => `<div class="card card--process mb-6 ${
-          index === 0
-            ? ""
-            : index % 2 === 0
-            ? "card--rotate-2"
-            : "card--rotate-2-reverse"
-        }">
-            <div class="card__header px-6">
-              <h3 class="card--process-num">${index + 1}</h3>
-            </div>
-            <div class="card__content px-6">
-              <h3 class="mb-3">${data.title}</h3>
-              <p>
-                ${data.content}
-              </p>
-            </div>
-            ${getProcessArrow(index)}
-          </div>`
-      )
-      .join("");
   </script>
 </html>

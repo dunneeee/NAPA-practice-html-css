@@ -15,6 +15,7 @@ img {
   display: block;
   max-width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 a {
@@ -38,9 +39,26 @@ input {
 }
 
 .container {
-  max-width: 1224px;
-  margin: 0 auto;
+  max-width: 540px;
   padding: 0 24px;
+  margin: 0 auto;
+  $widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+  );
+
+  @each $key, $value in $widths {
+    &--#{$key} {
+      max-width: $value;
+    }
+  }
+
+  &--fluid {
+    max-width: none;
+  }
 }
 
 .icon-xs {

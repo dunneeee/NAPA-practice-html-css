@@ -1,19 +1,23 @@
+.feature {
+  @include media-query("md") {
+    &__header {
+      margin-top: 40px;
+    }
+  }
+}
+
 .grants {
   &__container {
     overflow: hidden;
-    margin-left: -24px;
-    margin-right: -24px;
   }
 
   &__list-card {
-    width: calc(256px * 5 + 16px * 4);
+    display: flex;
     gap: 16px;
-    & > .card {
-      flex-basis: 256px;
-    }
 
     &:first-child {
       margin-left: 24px;
+      margin-right: 24px;
     }
   }
 }

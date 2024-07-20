@@ -15,6 +15,8 @@
 
 .card {
   @include initial-card(480px);
+  flex-shrink: 0;
+  max-width: 100%;
   &--subtext {
     @include text-mono-md;
   }
@@ -46,6 +48,10 @@
 
   &__footer {
     padding: 16px;
+    @include text-paragraph-md;
+    @include media-query("md") {
+      @include text-mono-md;
+    }
   }
 
   &.card--blog {
@@ -91,5 +97,10 @@
     &--rotate-#{$i}-reverse {
       transform: rotate(-#{$i}deg);
     }
+  }
+
+  @include media-query("md") {
+    height: 560px;
+    width: 392px;
   }
 }

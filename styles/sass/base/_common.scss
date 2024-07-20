@@ -24,6 +24,24 @@
       margin-bottom: $i * 4px;
     }
   }
+
+  .m-auto {
+    margin: auto;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .m-0 {
+    margin: 0;
+  }
 }
 
 @include generate-margins();
@@ -72,6 +90,34 @@
   }
 }
 
+.max-w {
+  $withs: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+  );
+
+  &-none {
+    max-width: none;
+  }
+
+  @each $key, $value in $withs {
+    &-#{$key} {
+      max-width: $value;
+    }
+  }
+
+  &-150 {
+    max-width: 600px;
+  }
+
+  &-202 {
+    max-width: 808px;
+  }
+}
+
 .h {
   &-full {
     height: 100%;
@@ -108,6 +154,22 @@
   &--wrap {
     white-space: normal;
   }
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex {

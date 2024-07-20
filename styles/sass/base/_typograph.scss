@@ -48,6 +48,9 @@
 // Heading hero
 h1 {
   @include typography(40px, 700, 48px, -0.021em);
+  @include media-query("md") {
+    @include typography(80px, 700, 88px, -0.022em);
+  }
 }
 
 // Heading xl
@@ -118,15 +121,7 @@ h5 {
 }
 
 @mixin text-link-lg {
-  @include typography(
-    16px,
-    400,
-    24px,
-    -0.011em,
-    center,
-    null,
-    $color-accent-brand
-  );
+  @include typography(16px, 400, 24px, -0.011em, center, $color-accent-brand);
 }
 
 .text {

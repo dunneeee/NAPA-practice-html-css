@@ -7,4 +7,56 @@
     position: absolute;
     left: 0;
   }
+
+  &__processes {
+    @include media-query("md") {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card--process {
+      flex-shrink: 1;
+      position: relative;
+      &:not(:first-child) {
+        margin-top: 20px;
+        @include media-query("md") {
+          margin-top: 0;
+        }
+      }
+      &:first-child {
+        transform: rotate(1deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(3deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-2deg);
+      }
+      @include media-query("md") {
+        height: 480px;
+      }
+    }
+  }
+
+  .card-process--right-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-80%);
+    @include media-query("md") {
+      transform: rotate(-90deg) translateY(-60%) translateX(20%);
+    }
+  }
+
+  .card-process--left-arrow {
+    position: absolute;
+    transform: translateY(-80%);
+    left: 0;
+    top: 50%;
+    @include media-query("md") {
+      transform: rotate(-90deg) translateY(-30%);
+    }
+  }
 }

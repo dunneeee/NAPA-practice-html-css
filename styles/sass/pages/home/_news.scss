@@ -11,4 +11,17 @@
     width: 29px;
     height: 28px;
   }
+
+  &-blog {
+    &__list-card {
+      display: flex;
+      flex-wrap: wrap;
+      @include media-query("md") {
+        gap: 16px;
+        & > .card {
+          flex-basis: calc(50% - 16px);
+        }
+      }
+    }
+  }
 }

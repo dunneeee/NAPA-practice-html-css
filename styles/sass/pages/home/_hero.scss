@@ -13,6 +13,9 @@
     bottom: calc(-50% - 8px);
     left: 0;
     width: 100%;
+    @include media-query("md") {
+      bottom: unset;
+    }
   }
 
   &--arrow {
@@ -22,6 +25,31 @@
     transform: translateX(-50%) translateY(50%);
     & > img {
       margin: 0 auto;
+    }
+  }
+
+  @include media-query("md") {
+    &__btns {
+      display: flex;
+      justify-content: center;
+      & > .btn {
+        display: inline-flex;
+        width: 180px;
+      }
+
+      & > .btn:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
+    &__count {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &--arrow {
+      width: 32px;
+      height: 100px;
     }
   }
 }

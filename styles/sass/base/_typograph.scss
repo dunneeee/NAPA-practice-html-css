@@ -47,9 +47,9 @@
 }
 // Heading hero
 h1 {
-  @include typography(40px, 700, 48px, -0.021em);
+  @include typography(32px, 700, 48px, -0.021em);
   @include media-query("md") {
-    @include typography(80px, 700, 88px, -0.022em);
+    @include typography(60px, 700, 88px, -0.022em);
   }
 }
 

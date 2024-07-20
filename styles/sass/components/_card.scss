@@ -14,9 +14,9 @@
 }
 
 .card {
-  @include initial-card(480px);
   flex-shrink: 0;
   max-width: 100%;
+  @include initial-card(480px);
   &--subtext {
     @include text-mono-md;
   }
@@ -62,6 +62,29 @@
         height: 128px;
         & > *:not(:last-child) {
           margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &.card--rfp {
+    width: 100%;
+    height: unset;
+    @include media-query("md") {
+      display: flex;
+      flex-direction: row;
+    }
+    .card {
+      &__content {
+        padding: 24px;
+        padding-bottom: 16px;
+      }
+
+      &__footer {
+        padding: 24px;
+        padding-top: 0;
+        @include media-query("md") {
+          padding-top: 24px;
         }
       }
     }

@@ -88,6 +88,32 @@
   &-auto {
     width: auto;
   }
+
+  @for $i from 0 through 20 {
+    &-#{$i} {
+      width: $i * 4px;
+    }
+  }
+}
+
+.h {
+  &-full {
+    height: 100%;
+  }
+
+  &-screen {
+    height: 100vh;
+  }
+
+  &-auto {
+    height: auto;
+  }
+
+  @for $i from 0 through 20 {
+    &-#{$i} {
+      height: $i * 4px;
+    }
+  }
 }
 
 .max-w {
@@ -115,20 +141,6 @@
 
   &-202 {
     max-width: 808px;
-  }
-}
-
-.h {
-  &-full {
-    height: 100%;
-  }
-
-  &-screen {
-    height: 100vh;
-  }
-
-  &-auto {
-    height: auto;
   }
 }
 

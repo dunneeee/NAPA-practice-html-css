@@ -1,0 +1,23 @@
+.badge {
+  @include text-paragraph-md;
+  padding: 4px 16px;
+  border-radius: 100px;
+  background-color: $color-bg-primary;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &--brand {
+    background-color: $color-accent-brand;
+  }
+
+  &--success {
+    background-color: $color-accent-green;
+  }
+
+  &--icon-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+  }
+}

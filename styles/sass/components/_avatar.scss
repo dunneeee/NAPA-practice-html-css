@@ -3,12 +3,25 @@
   height: 40px;
   border-radius: 100%;
   overflow: hidden;
+
+  &--count {
+    background-color: $color-accent-brand;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-text-primary;
+  }
 }
 .avatar-group {
   display: flex;
   align-items: center;
   & > .avatar {
-    margin-right: -12px;
+    margin-right: -18px;
     border: 2px solid $color-bg-secondary;
     &:last-child {
       margin-right: 0;

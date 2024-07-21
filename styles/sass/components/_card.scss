@@ -25,6 +25,9 @@
     height: 136px;
     background-color: $color-bg-img;
     border-radius: 16px;
+    @include media-query("md") {
+      height: 180px;
+    }
   }
 
   &__header {

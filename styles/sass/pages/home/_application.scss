@@ -54,8 +54,8 @@
     position: absolute;
     transform: translateY(-80%);
     left: 0;
-    top: 50%;
     @include media-query("md") {
+      top: 50%;
       transform: rotate(-90deg) translateY(-30%);
     }
   }

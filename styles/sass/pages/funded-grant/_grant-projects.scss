@@ -1,0 +1,16 @@
+.grant-projects {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    & > .card {
+      flex: 1 1 100%;
+      @include media-query("md") {
+        flex: 1 1 calc((100% / 2) - 24px);
+      }
+      @include media-query("lg") {
+        flex: 1 1 calc((100% / 3) - 24px);
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.toggle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &__input {
+    display: none;
+    &:checked + .toggle__label {
+      background-color: $color-accent-brand;
+      &::after {
+        left: 100%;
+        transform: translateY(-50%) translateX(-100%);
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 14px;
+    background-color: $color-bg-secondary;
+    border-radius: 99px;
+    transition: background-color 0.3s ease;
+
+    &-text {
+      user-select: none;
+      cursor: pointer;
+      @include text-label;
+      text-wrap: nowrap;
+      margin-left: 16px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $color-accent-white;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      border: 0.5px solid $gradient-border;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0px;
+      transition: 0.3s ease;
+    }
+  }
+}

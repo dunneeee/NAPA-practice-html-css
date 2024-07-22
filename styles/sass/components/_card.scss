@@ -116,15 +116,6 @@
     }
   }
 
-  @for $i from 1 through 360 {
-    &--rotate-#{$i} {
-      transform: rotate(#{$i}deg);
-    }
-    &--rotate-#{$i}-reverse {
-      transform: rotate(-#{$i}deg);
-    }
-  }
-
   @include media-query("md") {
     height: 560px;
     width: 392px;

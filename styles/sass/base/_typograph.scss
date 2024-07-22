@@ -88,7 +88,15 @@ h5 {
 }
 
 @mixin text-mono-xl {
-  @include typography(20px, 400, 24px, 0, center, $font-mono);
+  @include typography(
+    20px,
+    400,
+    24px,
+    0,
+    center,
+    $color-text-secondary,
+    $font-mono
+  );
 }
 
 @mixin text-mono-lg {

@@ -40,4 +40,56 @@
       }
     }
   }
+
+  &__mobile {
+    &-fixed {
+      display: none;
+      flex-direction: column;
+      height: 100%;
+      background-color: $color-bg-secondary;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      @include media-query("md") {
+        display: none;
+      }
+    }
+
+    &-top {
+      @extend .topbar;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    &-navigations {
+      flex: 1;
+      margin-top: 80px;
+      padding: 0 24px;
+    }
+
+    &-item {
+      @extend .mb-8, .text-center;
+      & > a {
+        @include text-mono-xl;
+        user-select: none;
+      }
+    }
+
+    &-social {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--active {
+    &.topbar__mobile-fixed {
+      display: flex;
+    }
+  }
 }

@@ -20,3 +20,17 @@ avatars.forEach((avatar) => {
     window.location.href = "./grantee.html";
   });
 });
+
+// Close navigation
+
+const closeNav = document.querySelector(".js--close-icon");
+const openNav = document.querySelector(".js--open-icon");
+const nav = document.querySelector(".js--nav");
+
+closeNav.addEventListener("click", () => {
+  nav.classList.toggle("topbar--active");
+});
+
+openNav.addEventListener("click", () => {
+  nav.classList.toggle("topbar--active");
+});

@@ -10,8 +10,6 @@
     width: 100%;
     & > img {
       scale: 1.2;
-      @include media-query("md") {
-      }
     }
   }
 }

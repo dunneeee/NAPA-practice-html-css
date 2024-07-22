@@ -11,7 +11,7 @@
     <header class="container container--fluid">
       <nav class="topbar">
         <a href="./index.html" class="logo">
-          <img src="./assets/imgs/logo.png" alt="logo" height="48" width="80" />
+          <img src="./imgs/logo.png" alt="logo" height="48" width="80" />
         </a>
         <div class="topbar__right">
           <ul class="topbar__navigations mr-2">
@@ -42,7 +42,7 @@
           </div>
           <div class="topbar--more-icon js--open-icon">
             <img
-              src="./assets/icons/fi_menu.svg"
+              src="/icons/fi_menu.svg"
               class="icon-xs"
               alt="menu"
               height="24"
@@ -55,12 +55,7 @@
       <nav class="topbar__mobile-fixed js--nav">
         <div class="topbar__mobile-top">
           <a href="./index.html" class="logo">
-            <img
-              src="./assets/imgs/logo.png"
-              alt="logo"
-              height="48"
-              width="80"
-            />
+            <img src="./imgs/logo.png" alt="logo" height="48" width="80" />
           </a>
           <div class="topbar__right">
             <div class="btn btn--brand topbar--btn">
@@ -237,7 +232,7 @@
     <!-- Footer -->
     <footer class="footer container container--xl py-10">
       <div class="footer__logo">
-        <img src="./assets/imgs/logo/logo-circle.svg" alt="logo circle" />
+        <img src="./imgs/logo/logo-circle.svg" alt="logo circle" />
       </div>
 
       <ul class="footer__content mt-8">
@@ -245,7 +240,7 @@
         <li class="mb-6"><a href="" class="text--mono-md">FAQ</a></li>
         <li class="mb-6"><a href="" class="text--mono-md">About</a></li>
         <li class="mb-6">
-          <a href="" class="text--mono-md">Brand assets</a>
+          <a href="" class="text--mono-md">Brand public</a>
         </li>
         <li class="mb-6">
           <a href="" class="text--mono-md center-y">
@@ -496,5 +491,5 @@
       expenseList.innerHTML += createExpenseCard(expense);
     });
   </script>
-  <script src="./handle-navigation.js"></script>
+  <script type="module" src="./handle-navigation.js"></script>
 </html>

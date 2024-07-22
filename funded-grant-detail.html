@@ -10,9 +10,9 @@
     <!-- Header navbar -->
     <header class="container container--fluid">
       <nav class="topbar">
-        <div class="logo">
+        <a href="./index.html" class="logo">
           <img src="./assets/imgs/logo.png" alt="logo" height="48" width="80" />
-        </div>
+        </a>
         <div class="topbar__right">
           <ul class="topbar__navigations mr-2">
             <li class="topbar__navigations-item">
@@ -26,13 +26,15 @@
               </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> Program expenses </a>
+              <a href="./program-expenses.html" class="text--mono-md">
+                Program expenses
+              </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> Blog </a>
+              <a href="./blog.html" class="text--mono-md"> Blog </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> FAQ</a>
+              <a href="./faq.html" class="text--mono-md"> FAQ</a>
             </li>
           </ul>
           <div class="btn btn--brand topbar--btn">
@@ -50,6 +52,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- Hero image -->
       <section class="hero-img container container--lg max-w-202">
@@ -691,4 +694,5 @@
       projectsContainer.innerHTML += createProjectCard(project);
     });
   </script>
+  <script src="./handle-navigation.js"></script>
 </html>

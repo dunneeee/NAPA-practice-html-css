@@ -10,9 +10,9 @@
     <!-- Header navbar -->
     <header class="container container--fluid">
       <nav class="topbar">
-        <div class="logo">
+        <a href="./index.html" class="logo">
           <img src="./assets/imgs/logo.png" alt="logo" height="48" width="80" />
-        </div>
+        </a>
         <div class="topbar__right">
           <ul class="topbar__navigations mr-2">
             <li class="topbar__navigations-item">
@@ -26,13 +26,15 @@
               </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> Program expenses </a>
+              <a href="./program-expenses.html" class="text--mono-md">
+                Program expenses
+              </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> Blog </a>
+              <a href="./blog.html" class="text--mono-md"> Blog </a>
             </li>
             <li class="topbar__navigations-item">
-              <a href="#" class="text--mono-md"> FAQ</a>
+              <a href="./faq.html" class="text--mono-md"> FAQ</a>
             </li>
           </ul>
           <div class="btn btn--brand topbar--btn">
@@ -515,7 +517,7 @@
               <h3 class="card--process-num">1</h3>
             </div>
             <div class="card__content">
-              <h3 class="mb-3">Apply</h3>
+              <h4 class="mb-3">Apply</h4>
               <p>
                 Submit a complete application to the dYdX Grants Team including
                 as many details as possible about the proposed idea and their
@@ -525,17 +527,11 @@
           </div>
 
           <div class="card card--process">
-            <div class="card-process--right-arrow">
-              <img
-                src="./assets/imgs/sketched/sketch-right-arrow.svg"
-                alt="right-arrow"
-              />
-            </div>
             <div class="card__header">
               <h3 class="card--process-num">2</h3>
             </div>
             <div class="card__content">
-              <h3 class="mb-3">Apply</h3>
+              <h4 class="mb-3">Apply</h4>
               <p>
                 Submit a complete application to the dYdX Grants Team including
                 as many details as possible about the proposed idea and their
@@ -545,17 +541,11 @@
           </div>
 
           <div class="card card--process">
-            <div class="card-process--left-arrow">
-              <img
-                src="./assets/imgs/sketched/sketch-left-arrow.svg"
-                alt="left-arrow"
-              />
-            </div>
             <div class="card__header">
               <h3 class="card--process-num">3</h3>
             </div>
             <div class="card__content">
-              <h3 class="mb-3">Apply</h3>
+              <h4 class="mb-3">Apply</h4>
               <p>
                 Submit a complete application to the dYdX Grants Team including
                 as many details as possible about the proposed idea and their
@@ -827,4 +817,5 @@
       ".application__processes"
     );
   </script>
+  <script src="./handle-navigation.js"></script>
 </html>

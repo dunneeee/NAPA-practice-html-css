@@ -126,6 +126,20 @@
   }
 }
 
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+
+  &-default {
+    cursor: default;
+  }
+
+  &-not-allowed {
+    cursor: not-allowed;
+  }
+}
+
 .md {
   @include media-query("md") {
     &--hidden {

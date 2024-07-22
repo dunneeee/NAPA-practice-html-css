@@ -1,0 +1,22 @@
+.bio {
+  &__avatar {
+    & > img {
+      @extend .mx-auto, .avatar, .avatar--xl;
+      @include media-query("md") {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  }
+
+  &__link {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @include media-query("md") {
+        flex-direction: row;
+      }
+    }
+  }
+}

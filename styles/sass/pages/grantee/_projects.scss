@@ -1,0 +1,13 @@
+.projects {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    & > .card {
+      flex: 1 1 100%;
+      @include media-query("md") {
+        flex: 1 1 calc(50% - 24px);
+      }
+    }
+  }
+}

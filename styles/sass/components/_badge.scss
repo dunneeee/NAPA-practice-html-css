@@ -36,4 +36,9 @@
     @include text-label;
     padding: 10px 12px;
   }
+
+  &--link {
+    @include text-label;
+    padding: 8px 16px;
+  }
 }

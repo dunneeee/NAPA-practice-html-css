@@ -14,6 +14,7 @@ module.exports = defineConfig({
         fundedGrant: resolve(__dirname, "funded-grant.html"),
         grantee: resolve(__dirname, "grantee.html"),
         blogPost: resolve(__dirname, "blog-post.html"),
+        faq: resolve(__dirname, "faq.html"),
       },
     },
   },

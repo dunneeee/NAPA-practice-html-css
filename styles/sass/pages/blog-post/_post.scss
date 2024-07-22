@@ -1,0 +1,34 @@
+.post {
+  &__img {
+    height: 155px;
+    background-color: $color-bg-img;
+    @extend .mb-4;
+    @include media-query("md") {
+      height: 460px;
+    }
+  }
+
+  &__heading {
+    @extend .mt-12, .text-left;
+  }
+
+  &__text {
+    @extend .text--paragraph-md, .text-secondary, .mt-6, .text-left;
+    @include media-query("md") {
+      font-size: 16px;
+    }
+  }
+
+  &__quote {
+    margin-top: 32px;
+    &--card {
+      width: 100%;
+      height: auto;
+      background-color: $color-bg-img;
+    }
+
+    &--content {
+      padding: 32px;
+    }
+  }
+}

@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Funded-grant</title>
-    <link rel="stylesheet" href="./styles/pages/funded-grant.scss" />
+    <title>Blog post</title>
+    <link rel="stylesheet" href="./styles/pages/blog-post.scss" />
   </head>
   <body>
+    <!-- Header navbar -->
     <header class="container container--fluid">
       <nav class="topbar">
         <div class="logo">
@@ -52,137 +53,94 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero container container--lg">
-        <div class="hero__header">
-          <h1 class="mb-6">Funded grants</h1>
+      <section class="hero container container--lg text-center max-w-202 py-6">
+        <p class="text--mono-md mb-4 text-center">Funding round</p>
+        <h1 class="mb-6">Round 9 of approvals</h1>
+
+        <div class="badge badge--lg badge--secondary">
+          <div class="badge__icon badge__icon--left">
+            <div class="avatar avatar--sm">
+              <img src="./assets/imgs/avatars/the-boy.png" alt="avatar" />
+            </div>
+          </div>
+
+          dYdX Grants Team
         </div>
       </section>
 
-      <!-- Featured grants -->
-      <section class="feature">
-        <!-- Tabs -->
-        <div class="tabs-container feature__tab mb-6 container container--xl">
-          <ul class="tabs">
-            <li class="tabs__tab tab--active">All</li>
-            <li class="tabs__tab">Technical / Tool Development</li>
-            <li class="tabs__tab">Governance</li>
-            <li class="tabs__tab">Growth / Marketing</li>
-            <li class="tabs__tab">Analytics</li>
-            <li class="tabs__tab">Third Party Provider</li>
-          </ul>
-          <button class="btn btn--ghost tabs__next">
-            <svg
-              class="w-4 h-4"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 12L10 8L6 4"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Toggle button -->
-        <div class="container container--xl">
-          <div class="toggle">
-            <input class="toggle__input" type="checkbox" id="show-completed" />
-            <label for="show-completed" class="toggle__label"></label>
-            <label for="show-completed" class="toggle__label-text"
-              >Show only completed</label
-            >
+      <!-- Blog Post -->
+      <section class="post container container--lg max-w-202 py-10">
+        <!-- Post image -->
+        <div class="post__img-wrapper">
+          <div class="post__img">
+            <img src="./assets/imgs/home/round-9.png" alt="Post image" />
           </div>
+          <p class="text--mono-sm text-secondary text-center">
+            This is an image caption
+          </p>
         </div>
-        <!-- Grant project -->
-        <div class="grant-projects container container--xl py-10">
-          <div class="projects">
-            <div class="card">
-              <div class="card__content">
-                <p class="text--mono-md mb-2">Crowdfund</p>
-                <h4>Funding rates page</h4>
-                <div class="mb-2">
-                  <p class="text--mono-md">Funding amount:</p>
-                  <p class="text--mono-md">$5,000 - $6,000</p>
-                </div>
-                <p class="card__content-text">
-                  Grant will be used to build a dedicated web app to give
-                  traders a view of all dYdX asset funding rates across multiple
-                  timeframes. The page will be interactive to include deep
-                  diving across different assets and historical analysis of
-                  changing rates. It will also include API fu...
-                </p>
-              </div>
-              <div class="card__footer">
-                <div class="avatar-group">
-                  <div class="avatar">
-                    <img
-                      src="./assets/imgs/avatars/the-boy.png"
-                      alt="the boy"
-                    />
-                  </div>
-                  <div class="avatar">
-                    <img
-                      src="./assets/imgs/avatars/the-girl.png"
-                      alt="the girl"
-                    />
-                  </div>
-                  <div class="avatar">
-                    <img
-                      src="./assets/imgs/avatars/the-boy.png"
-                      alt="the boy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="card">
-              <div class="card__img"></div>
-              <div class="card__content">
-                <p class="text--mono-md mb-2">Crowdfund</p>
-                <h4>Funding rates page</h4>
-                <div class="mb-2">
-                  <p class="text--mono-md">Funding amount:</p>
-                  <p class="text--mono-md">$5,000 - $6,000</p>
-                </div>
-                <p class="card__content-text">
-                  Grant will be used to build a dedicated web app to give
-                  traders a view of all dYdX asset funding rates across multiple
-                  timeframes. The page will be interactive to include deep
-                  diving across different assets and historical analysis of
-                  changing rates. It will also include API fu...
-                </p>
-              </div>
-              <div class="card__footer">
-                <div class="avatar-group">
-                  <div class="avatar">
-                    <img
-                      src="./assets/imgs/avatars/the-boy.png"
-                      alt="the boy"
-                    />
-                  </div>
-                  <div class="avatar">
-                    <img
-                      src="./assets/imgs/avatars/the-girl.png"
-                      alt="the girl"
-                    />
-                  </div>
-                </div>
-              </div>
+        <!-- Post content -->
+        <div class="post__content">
+          <p class="post__text">Hi Everyone!</p>
+          <p class="post__text">
+            Excited to share another round of funding approved by the Committee!
+            For Round 6, we have 5 grantees with a total of $246,000.00 in DYDX
+            funding. Check out the table below for more information on each
+            grant.
+          </p>
+          <p class="post__text">
+            We’re also happy to share that the Committee revamp is close to
+            getting finalized. This revamp will enable payments to be complete
+            by the Grants multisig. The team is working on the final
+            documentation and will share everything with the community as soon
+            as its ready. We’re excited to finally start paying our Grantees to
+            really get things going!
+          </p>
+          <h3 class="post__heading">
+            Centralization lets you make decisions quickly
+          </h3>
+          <p class="post__text">
+            We’re also happy to share that the Committee revamp is close to
+            getting finalized. This revamp will enable payments to be complete
+            by the Grants multisig. The team is working on the final
+            documentation and will share everything with the community as soon
+            as its ready. We’re excited to finally start paying our Grantees to
+            really get things going!
+          </p>
+          <h3 class="post__heading">
+            Centralization lets you make decisions quickly
+          </h3>
+          <p class="post__text">
+            We’re also happy to share that the Committee revamp is close to
+            getting finalized. This revamp will enable payments to be complete
+            by the Grants multisig. The team is working on the final
+            documentation and will share everything with the community as soon
+            as its ready. We’re excited to finally start paying our Grantees to
+            really get things going!
+          </p>
+        </div>
+        <div class="post__quote">
+          <div class="card post__quote--card">
+            <div class="card__content post__quote--content">
+              The more realistic an experience we provide, the more real
+              feedback we can get. With a more static mockup, or broad-line
+              prototype, or a rich prototype with placeholder data, you tend to
+              get more hypothetical feedback.
+              <p> — Creighton Abrams</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Funded grant -->
+      <section class="funded-grants container container--lg max-w-202 py-10">
+        <h3>Funded grants</h3>
+        <ul class="funded-grants__list"></ul>
       </section>
 
       <!-- CTA -->
-      <section class="cta__wrapper container container--xl py-10">
+      <section class="cta__wrapper container container--xl py-10 md--hidden">
         <div class="cta">
           <p class="cta__paragraph mb-2">Have a project in mind?</p>
           <div class="cta__text mb-10">
@@ -413,79 +371,6 @@
           "./assets/imgs/avatars/the-boy.png",
         ],
       },
-      {
-        category: "Crowdfund",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: null,
-        users: [
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-        ],
-      },
-      {
-        category: "Category",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: null,
-        users: ["./assets/imgs/avatars/the-boy.png"],
-      },
-      {
-        category: "Crowdfund",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: "...",
-        users: [
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-        ],
-      },
-      {
-        category: "Category",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: null,
-        users: [
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-        ],
-      },
-      {
-        category: "Crowdfund",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: "...",
-        users: [
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-        ],
-      },
-      {
-        category: "Category",
-        title: "Funding rates page",
-        fundingAmount: "$5,000 - $6,000",
-        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
-        background: null,
-        users: [
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-          "./assets/imgs/avatars/the-girl.png",
-          "./assets/imgs/avatars/the-boy.png",
-        ],
-      },
     ];
 
     const createUsers = (users) =>
@@ -534,7 +419,7 @@
         </div>
       </div>`;
 
-    const projectsContainer = document.querySelector(".projects");
+    const projectsContainer = document.querySelector(".funded-grants__list");
     projects.forEach((project) => {
       projectsContainer.innerHTML += createProjectCard(project);
     });

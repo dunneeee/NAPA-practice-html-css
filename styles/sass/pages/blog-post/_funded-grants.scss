@@ -1,0 +1,14 @@
+.funded-grants {
+  &__list {
+    @extend .mt-12;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    & > .card {
+      flex: 0 1 100%;
+      @include media-query("sm") {
+        flex: 0 1 calc(50% - 8px);
+      }
+    }
+  }
+}

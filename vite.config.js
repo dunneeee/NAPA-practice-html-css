@@ -13,6 +13,7 @@ module.exports = defineConfig({
         fundedGrantDetail: resolve(__dirname, "funded-grant-detail.html"),
         fundedGrant: resolve(__dirname, "funded-grant.html"),
         grantee: resolve(__dirname, "grantee.html"),
+        blogPost: resolve(__dirname, "blog-post.html"),
       },
     },
   },

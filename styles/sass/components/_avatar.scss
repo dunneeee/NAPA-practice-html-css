@@ -17,6 +17,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  &--sm {
+    width: 24px;
+    height: 24px;
+  }
 }
 .avatar-group {
   display: flex;

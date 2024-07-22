@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funded grant detail</title>
+    <link rel="stylesheet" href="./styles/pages/funded-grant-detail.scss" />
+  </head>
+  <body>
+    <!-- Header navbar -->
+    <header class="container container--fluid">
+      <nav class="topbar">
+        <div class="logo">
+          <img src="./assets/imgs/logo.png" alt="logo" height="48" width="80" />
+        </div>
+        <div class="topbar__right">
+          <ul class="topbar__navigations mr-2">
+            <li class="topbar__navigations-item">
+              <a href="./discover.html" class="text--mono-md"
+                >Discover initiatives</a
+              >
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="./funded-grant.html" class="text--mono-md">
+                Funded grants
+              </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> Program expenses </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> Blog </a>
+            </li>
+            <li class="topbar__navigations-item">
+              <a href="#" class="text--mono-md"> FAQ</a>
+            </li>
+          </ul>
+          <div class="btn btn--brand topbar--btn">
+            <span class="topbar--btn-text">Apply</span>
+          </div>
+          <div class="topbar--more-icon">
+            <img
+              src="./assets/icons/fi_menu.svg"
+              class="icon-xs"
+              alt="menu"
+              height="24"
+              width="24"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero image -->
+      <section class="hero-img container container--lg max-w-202">
+        <div class="hero-img__wrapper flex">
+          <img
+            class="hidden md--block w-full"
+            src="./assets/imgs/funded-grants/detail-hero-img.png"
+          />
+        </div>
+      </section>
+
+      <!-- Funded grant detail -->
+      <section class="funded-grant container container--lg max-w-202 py-10">
+        <!-- Detail top -->
+        <div class="funded-grant__top">
+          <div class="funded-grant__header">
+            <p class="text--mono-md">Category</p>
+            <h1 class="md--text-left">Youtube dYdX Education Library</h1>
+          </div>
+
+          <div
+            class="funded-grant__amount mb-6 text-center md--flex md--items-center"
+          >
+            <div class="badge badge--success mb-4 md--mb-0">
+              Funded
+              <div class="badge__icon badge__icon--right">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.3334 4L6.00008 11.3333L2.66675 8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <p class="text-tertiary md--ml-4">Funding amount:</p>
+            <p class="mb-6 md--mb-0 md--ml-2">$5,000</p>
+            <div class="funded-grant__button md--ml-auto">
+              <button class="btn btn--brand w-full">
+                Project link
+                <div class="btn__icon btn__icon--right">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 8.66667V12.6667C12.5 13.0203 12.3595 13.3594 12.1095 13.6095C11.8594 13.8595 11.5203 14 11.1667 14H3.83333C3.47971 14 3.14057 13.8595 2.89052 13.6095C2.64048 13.3594 2.5 13.0203 2.5 12.6667V5.33333C2.5 4.97971 2.64048 4.64057 2.89052 4.39052C3.14057 4.14048 3.47971 4 3.83333 4H7.83333"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.5 2H14.5V6"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.16675 9.33333L14.5001 2"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="funded-grant__team text-center md--text-left">
+            <h5 class="text-center mb-4 md--text-left">Team</h5>
+            <div class="badge badge--secondary badge--lg mb-4">
+              <div class="badge__icon badge__icon--left">
+                <div class="avatar avatar--sm">
+                  <img src="./assets/imgs/avatars/the-boy.png" alt="avatar" />
+                </div>
+              </div>
+              Theresa Webb
+            </div>
+            <div class="badge badge--secondary badge--lg mb-4 md--ml-4">
+              <div class="badge__icon badge__icon--left">
+                <div class="avatar avatar--sm">
+                  <img src="./assets/imgs/avatars/the-girl.png" alt="avatar" />
+                </div>
+              </div>
+              Jenny Wilson
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Detail middle -->
+        <div class="funded-grant__content">
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Description</h5>
+            <p class="text-secondary">
+              Grant includes work on Funding Rates page, Rewards & Tracking
+              Simulator, and CLI Trading tool. All will be combined in a
+              community accessible webpage that will continue to host additional
+              work done and maintenance on behalf of Chaos Labs.
+            </p>
+          </div>
+
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Purpose</h5>
+            <p class="text-secondary">
+              Funding Rates page will help promote and guide traders around
+              Perpetual premiums found across all assets traded on dYdX. Rewards
+              & Tracking simulator will help market the benefits of trading on
+              dYdX and assist current traders in mapping out their rewards. The
+              CLI trading tool will make it easier for non-UI based traders to
+              execute quickly on dYdX. The general purpose of this grant is to
+              recruit Chaos Labs, a very qualified contributor, to work with
+              dYdX on current and future projects.
+            </p>
+          </div>
+
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Execution</h5>
+            <p class="text-secondary">
+              3 months to completion. Each individual grant is estimated to take
+              120 days, but will be worked on concurrently.
+            </p>
+          </div>
+
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Payment structure</h5>
+            <p class="text-secondary">
+              25% upfront / 75% at completion of all Grants
+            </p>
+          </div>
+
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Useful links</h5>
+            <a href="#" class="text--link-md center-y mb-4"
+              >www.granttitleproject.com
+              <div class="ml-2 center">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 2H14V6"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.66666 9.33333L14 2"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg></div
+            ></a>
+            <a href="#" class="text--link-md center-y mb-4"
+              >www.granttitleproject.com
+              <div class="ml-2 center">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 2H14V6"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.66666 9.33333L14 2"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg></div
+            ></a>
+            <a href="#" class="text--link-md center-y mb-4"
+              >www.granttitleproject.com
+              <div class="ml-2 center">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 2H14V6"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.66666 9.33333L14 2"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg></div
+            ></a>
+          </div>
+
+          <div class="funded-grant__content-block">
+            <h5 class="funded-grant__content-title">Funding transactions</h5>
+
+            <div class="funded-grant__transactions">
+              <div class="card card--rfp mb-4">
+                <div class="card__content">
+                  <h5>Round 9</h5>
+                  <p class="text--mono-md mb-8">Date</p>
+                  <p>Description</p>
+                </div>
+
+                <div class="card__footer">
+                  <div class="flex items-center justify-between">
+                    <p class="text--mono-md text-primary">$250,000.00</p>
+                    <svg
+                      class="icon-xs ml-4"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 2.5H17.5V7.5"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.33333 11.6667L17.5 2.5"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card--rfp">
+                <div class="card__content">
+                  <h5>Round 9</h5>
+                  <p class="text--mono-md mb-8">Date</p>
+                  <p>Description</p>
+                </div>
+
+                <div class="card__footer">
+                  <div class="flex items-center justify-between">
+                    <p class="text--mono-md text-primary">$250,000.00</p>
+                    <svg
+                      class="icon-xs ml-4"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 2.5H17.5V7.5"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.33333 11.6667L17.5 2.5"
+                        stroke="#A59EBA"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- More grants like this -->
+      <section class="container container--lg max-w-202 more-grants py-10">
+        <div class="more-grants__header">
+          <h3 class="mb-4">More grants like this</h3>
+          <div class="more-grants__link flex center">
+            <a href="#" class="btn btn--link"
+              >Read more on our blog
+              <div class="btn__icon btn__icon--right">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.33334 8H12.6667"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 3.33333L12.6667 8L8 12.6667"
+                    stroke="#6966FF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="more-grants__cards"></div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta__wrapper container container--xl py-10 md--hidden">
+        <div class="cta">
+          <p class="cta__paragraph mb-2">Have a project in mind?</p>
+          <div class="cta__text mb-10">
+            <h3 class="cta__header">Let’s create something awesome.</h3>
+          </div>
+          <button type="button" class="btn btn-ghost btn-cta w-full">
+            Apply for grant
+            <svg
+              class="icon-xs btn__icon btn__icon--right"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.33301 8H12.6663"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8 3.33337L12.6667 8.00004L8 12.6667"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer container container--xl py-10">
+      <div class="footer__logo">
+        <img src="./assets/imgs/logo/logo-circle.svg" alt="logo circle" />
+      </div>
+
+      <ul class="footer__content mt-8">
+        <li class="mb-6"><a href="" class="text--mono-md">About</a></li>
+        <li class="mb-6"><a href="" class="text--mono-md">FAQ</a></li>
+        <li class="mb-6"><a href="" class="text--mono-md">About</a></li>
+        <li class="mb-6">
+          <a href="" class="text--mono-md">Brand assets</a>
+        </li>
+        <li class="mb-6">
+          <a href="" class="text--mono-md center-y">
+            dYdX Foundation
+            <div class="ml-2">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2352_31465)">
+                  <path
+                    d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 1.5H10.5V4.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 7L10.5 1.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2352_31465">
+                    <rect width="12" height="12" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="mb-6">
+          <a href="" class="text--mono-md center-y">
+            dYdX Training
+            <div class="ml-2">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2352_31465)">
+                  <path
+                    d="M9 6.5V9.5C9 9.76522 8.89464 10.0196 8.70711 10.2071C8.51957 10.3946 8.26522 10.5 8 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V4C1.5 3.73478 1.60536 3.48043 1.79289 3.29289C1.98043 3.10536 2.23478 3 2.5 3H5.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 1.5H10.5V4.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 7L10.5 1.5"
+                    stroke="#C8C7D8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2352_31465">
+                    <rect width="12" height="12" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="center-y footer__last-icons">
+          <div class="mr-8">
+            <svg
+              width="16"
+              height="14"
+              viewBox="0 0 16 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.03344 13.5005C11.0697 13.5005 14.3722 8.49829 14.3722 4.16173C14.3722 4.0211 14.3691 3.87735 14.3628 3.73673C15.0052 3.27213 15.5597 2.69666 16 2.03735C15.4017 2.30356 14.7664 2.47741 14.1159 2.55298C14.8009 2.14243 15.3137 1.49747 15.5594 0.737666C14.915 1.11953 14.2104 1.3889 13.4756 1.53423C12.9806 1.0082 12.326 0.659899 11.6131 0.543189C10.9003 0.426479 10.1688 0.547855 9.53183 0.888553C8.89486 1.22925 8.38787 1.77029 8.08923 2.42803C7.7906 3.08577 7.71695 3.82357 7.87969 4.52735C6.575 4.46188 5.29862 4.12296 4.13332 3.53255C2.96802 2.94215 1.9398 2.11345 1.11531 1.10017C0.696266 1.82265 0.568038 2.67759 0.756687 3.49122C0.945337 4.30485 1.43671 5.01612 2.13094 5.48048C1.60975 5.46393 1.09998 5.32361 0.64375 5.0711V5.11173C0.643283 5.86992 0.905399 6.60488 1.38554 7.19167C1.86568 7.77846 2.53422 8.18086 3.2775 8.33048C2.7947 8.46257 2.28799 8.48182 1.79656 8.38673C2.0063 9.03878 2.41438 9.60908 2.96385 10.018C3.51331 10.427 4.17675 10.6542 4.86156 10.668C3.69895 11.5812 2.26278 12.0766 0.784375 12.0742C0.522191 12.0738 0.260266 12.0578 0 12.0261C1.5019 12.9897 3.24902 13.5014 5.03344 13.5005Z"
+                fill="#C8C7D8"
+              />
+            </svg>
+          </div>
+
+          <div class="">
+            <svg
+              width="16"
+              height="13"
+              viewBox="0 0 16 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5447 1.77144C12.5249 1.30352 11.4313 0.958775 10.2879 0.761326C10.2671 0.757516 10.2463 0.767039 10.2356 0.786086C10.0949 1.03623 9.93915 1.36256 9.83006 1.61906C8.60027 1.43494 7.37679 1.43494 6.17221 1.61906C6.0631 1.35686 5.90166 1.03623 5.76038 0.786086C5.74966 0.767674 5.72886 0.758151 5.70803 0.761326C4.56527 0.958144 3.47171 1.30289 2.45129 1.77144C2.44246 1.77525 2.43488 1.7816 2.42986 1.78985C0.355594 4.88876 -0.212633 7.9115 0.0661201 10.8968C0.0673814 10.9114 0.0755799 10.9253 0.086932 10.9342C1.45547 11.9392 2.78114 12.5494 4.08219 12.9538C4.10301 12.9602 4.12507 12.9525 4.13832 12.9354C4.44608 12.5151 4.72043 12.0719 4.95565 11.6059C4.96953 11.5786 4.95628 11.5462 4.92791 11.5355C4.49275 11.3704 4.0784 11.1691 3.67982 10.9406C3.64829 10.9222 3.64577 10.8771 3.67477 10.8555C3.75865 10.7926 3.84255 10.7272 3.92264 10.6612C3.93713 10.6491 3.95732 10.6466 3.97435 10.6542C6.59286 11.8497 9.4277 11.8497 12.0153 10.6542C12.0323 10.646 12.0525 10.6485 12.0677 10.6606C12.1478 10.7266 12.2316 10.7926 12.3161 10.8555C12.3451 10.8771 12.3433 10.9222 12.3117 10.9406C11.9131 11.1736 11.4988 11.3704 11.063 11.5348C11.0346 11.5456 11.022 11.5786 11.0359 11.6059C11.2762 12.0713 11.5505 12.5145 11.8526 12.9348C11.8652 12.9525 11.8879 12.9602 11.9087 12.9538C13.2161 12.5494 14.5417 11.9392 15.9103 10.9342C15.9223 10.9253 15.9298 10.912 15.9311 10.8974C16.2647 7.4461 15.3723 4.44815 13.5655 1.79048C13.5611 1.7816 13.5535 1.77525 13.5447 1.77144ZM5.34668 9.07905C4.55833 9.07905 3.90876 8.35528 3.90876 7.46643C3.90876 6.57757 4.54574 5.85381 5.34668 5.85381C6.15392 5.85381 6.79721 6.58393 6.78459 7.46643C6.78459 8.35528 6.14761 9.07905 5.34668 9.07905ZM10.6632 9.07905C9.87484 9.07905 9.22526 8.35528 9.22526 7.46643C9.22526 6.57757 9.86222 5.85381 10.6632 5.85381C11.4704 5.85381 12.1137 6.58393 12.1011 7.46643C12.1011 8.35528 11.4704 9.07905 10.6632 9.07905Z"
+                fill="#C8C7D8"
+              />
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script>
+    const html = ([first, ...strings], ...values) =>
+      values
+        .reduce((acc, cur) => acc.concat(cur, strings.shift()), [first])
+        .filter(Boolean)
+        .join("");
+    const projects = [
+      {
+        category: "Crowdfund",
+        title: "Funding rates page",
+        fundingAmount: "$5,000 - $6,000",
+        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
+        background: "...",
+        users: [
+          "./assets/imgs/avatars/the-boy.png",
+          "./assets/imgs/avatars/the-girl.png",
+          "./assets/imgs/avatars/the-boy.png",
+          "./assets/imgs/avatars/the-girl.png",
+        ],
+      },
+      {
+        category: "Category",
+        title: "Funding rates page",
+        fundingAmount: "$5,000 - $6,000",
+        description: `Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API fu...`,
+        background: null,
+        users: [
+          "./assets/imgs/avatars/the-boy.png",
+          "./assets/imgs/avatars/the-girl.png",
+          "./assets/imgs/avatars/the-boy.png",
+          "./assets/imgs/avatars/the-girl.png",
+          "./assets/imgs/avatars/the-boy.png",
+        ],
+      },
+    ];
+
+    const createUsers = (users) =>
+      users
+        .reduce(
+          (acc, cur, index) => {
+            if (index < 3) {
+              acc[0].push(cur);
+            } else {
+              acc[1].push(cur);
+            }
+            return acc;
+          },
+          [[], []]
+        )
+        .map((group, index) =>
+          index === 0
+            ? group.map(
+                (user) => html`
+                  <div class="avatar">
+                    <img src="${user}" alt="${user}" />
+                  </div>
+                `
+              )
+            : group.length > 0
+            ? html`<div class="avatar">
+                <div class="avatar__count">+${group.length}</div>
+              </div>`
+            : ""
+        );
+
+    const createProjectCard = (project) =>
+      html`<div class="card">
+        ${project.background && `<div class="card__img"></div>`}
+        <div class="card__content">
+          <p class="text--mono-md mb-2">${project.category}</p>
+          <h4>${project.title}</h4>
+          <div class="mb-2">
+            <p class="text--mono-md">Funding amount:</p>
+            <p class="text--mono-md">${project.fundingAmount}</p>
+          </div>
+          <p class="card__content-text">${project.description}</p>
+        </div>
+        <div class="card__footer">
+          <div class="avatar-group">${createUsers(project.users)}</div>
+        </div>
+      </div>`;
+    const projectsContainer = document.querySelector(".more-grants__cards");
+    projects.forEach((project) => {
+      projectsContainer.innerHTML += createProjectCard(project);
+    });
+  </script>
+</html>

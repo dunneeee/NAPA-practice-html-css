@@ -14,10 +14,26 @@
     background-color: $color-accent-green;
   }
 
-  &--icon-right {
+  &--secondary {
+    background-color: $color-bg-secondary;
+  }
+
+  &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 11px;
+
+    &--left {
+      margin-right: 8px;
+    }
+
+    &--right {
+      margin-left: 8px;
+    }
+  }
+
+  &--lg {
+    @include text-label;
+    padding: 10px 12px;
   }
 }

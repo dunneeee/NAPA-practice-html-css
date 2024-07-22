@@ -1,0 +1,9 @@
+.hero-img {
+  &__wrapper {
+    height: 136px;
+    background-color: $color-bg-img;
+    @include media-query("md") {
+      height: 360px;
+    }
+  }
+}

@@ -510,7 +510,9 @@
                 `
               )
             : group.length > 0
-            ? html`<div class="avatar avatar--count">+${group.length}</div>`
+            ? html`<div class="avatar">
+                <div class="avatar__count">+${group.length}</div>
+              </div>`
             : ""
         );
 

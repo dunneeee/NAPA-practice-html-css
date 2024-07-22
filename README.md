@@ -7,15 +7,31 @@
 
 ### Timeline
 
-- 2 weeks: 16/07-30/07/2024
+- 4 days: 19/07-22/07/2024
+- Timeline:
+  | Tasks | Total Time |
+  | -------- | ------- |
+  | Init source and implement home page, component | 5h |
+  | Implement discover page, style some component | 1h |
+  | Style, refactor and fix bug some component | 1h |
+  | Implement founded grant page | 1h |
+  | Implement founded grantee | 1h |
+  | Implement program expenses page | 1h |
+  | Implement blog page | 1h |
+  | Implement blog post page | 1h |
+  | Implement faq page | 1h |
+  | Implement brand assets page | 1h |
+  | Fix bugs | 3h |
+  |**Total time**|17h|
 
 ### Technical Stacks
 
-- HTML/CSS
+- HTML/SCSS
+- Vite
 
 ### Run
 
 - Dev:
   `npm i && npm run dev`
 - Build:
-  `npm run build`
+  `npm i && npm run build`

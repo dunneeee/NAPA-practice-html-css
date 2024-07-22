@@ -84,7 +84,7 @@
             <img
               src="./assets/icons/fi_arrow_right.svg"
               alt="arrow right"
-              class="icon-xs btn--icon-right"
+              class="icon-xs btn__icon btn__icon--right"
             />
           </button>
         </div>
@@ -126,7 +126,7 @@
           <a href="#" class="text--link-lg btn btn--link">
             View all funded projects
             <svg
-              class="icon-xs btn--icon-right"
+              class="icon-xs btn__icon btn__icon--right"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -372,7 +372,7 @@
           <a href="#" class="btn btn--link">
             Read more on our blog
             <svg
-              class="icon-xs btn--icon-right"
+              class="icon-xs btn__icon btn__icon--right"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -576,7 +576,7 @@
           <button type="button" class="btn btn-ghost btn-cta w-full">
             Apply for grant
             <svg
-              class="icon-xs btn--icon-right"
+              class="icon-xs btn__icon btn__icon--right"
               width="16"
               height="16"
               viewBox="0 0 16 16"
@@ -602,6 +602,7 @@
         </div>
       </section>
 
+      <!-- Footer -->
       <footer class="footer container container--xl py-10">
         <div class="footer__logo">
           <img src="./assets/imgs/logo/logo-circle.svg" alt="logo circle" />
@@ -737,6 +738,11 @@
   </body>
 
   <script>
+    const html = ([first, ...strings], ...values) =>
+      values
+        .reduce((acc, cur) => acc.concat(cur, strings.shift()), [first])
+        .filter(Boolean)
+        .join("");
     // Insert accordion content
     const accordionContainer = document.querySelector(".question-accordions");
 

@@ -40,12 +40,15 @@
     }
   }
 
-  &--icon {
-    &-left {
+  &__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &--left {
       margin-right: 12px;
     }
 
-    &-right {
+    &--right {
       margin-left: 12px;
     }
   }

@@ -1,0 +1,7 @@
+@function with-prefix($prefix, $value) {
+  @if $prefix {
+    @return #{$prefix}--#{$value};
+  } @else {
+    @return #{$value};
+  }
+}

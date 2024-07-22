@@ -15,6 +15,7 @@ module.exports = defineConfig({
         grantee: resolve(__dirname, "grantee.html"),
         blogPost: resolve(__dirname, "blog-post.html"),
         faq: resolve(__dirname, "faq.html"),
+        brandAssets: resolve(__dirname, "brand-assets.html"),
       },
     },
   },

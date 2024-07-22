@@ -1,0 +1,13 @@
+.logo {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    & > .download {
+      flex: 0 1 100%;
+      @include media-query("md") {
+        flex: 0 1 calc(50% - 12px);
+      }
+    }
+  }
+}

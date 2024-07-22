@@ -1,0 +1,56 @@
+@import "../utils/with-prefix";
+
+@mixin generate-paddings($prefix: null) {
+  .#{with-prefix($prefix, "p")} {
+    @for $i from 0 through 20 {
+      &-#{$i} {
+        padding: $i * 4px;
+      }
+
+      &t-#{$i} {
+        padding-top: $i * 4px;
+      }
+
+      &r-#{$i} {
+        padding-right: $i * 4px;
+      }
+
+      &b-#{$i} {
+        padding-bottom: $i * 4px;
+      }
+
+      &l-#{$i} {
+        padding-left: $i * 4px;
+      }
+
+      &x-#{$i} {
+        padding-left: $i * 4px;
+        padding-right: $i * 4px;
+      }
+
+      &y-#{$i} {
+        padding-top: $i * 4px;
+        padding-bottom: $i * 4px;
+      }
+    }
+
+    &-auto {
+      padding: auto;
+    }
+
+    &x-auto {
+      padding-left: auto;
+      padding-right: auto;
+    }
+
+    &l-auto {
+      padding-left: auto;
+    }
+  }
+}
+
+@include generate-paddings();
+
+@include media-query("md") {
+  @include generate-paddings("md");
+}

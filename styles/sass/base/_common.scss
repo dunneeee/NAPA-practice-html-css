@@ -1,81 +1,7 @@
-@mixin generate-margins() {
-  @for $i from 0 through 20 {
-    .m-#{$i} {
-      margin: $i * 4px;
-    }
-    .mt-#{$i} {
-      margin-top: $i * 4px;
-    }
-    .mr-#{$i} {
-      margin-right: $i * 4px;
-    }
-    .mb-#{$i} {
-      margin-bottom: $i * 4px;
-    }
-    .ml-#{$i} {
-      margin-left: $i * 4px;
-    }
-    .mx-#{$i} {
-      margin-left: $i * 4px;
-      margin-right: $i * 4px;
-    }
-    .my-#{$i} {
-      margin-top: $i * 4px;
-      margin-bottom: $i * 4px;
-    }
-  }
-
-  .m-auto {
-    margin: auto;
-  }
-
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .m-0 {
-    margin: 0;
-  }
-}
-
-@include generate-margins();
-
-@mixin generate-paddings() {
-  @for $i from 0 through 20 {
-    .p-#{$i} {
-      padding: $i * 4px;
-    }
-    .pt-#{$i} {
-      padding-top: $i * 4px;
-    }
-    .pr-#{$i} {
-      padding-right: $i * 4px;
-    }
-    .pb-#{$i} {
-      padding-bottom: $i * 4px;
-    }
-    .pl-#{$i} {
-      padding-left: $i * 4px;
-    }
-    .px-#{$i} {
-      padding-left: $i * 4px;
-      padding-right: $i * 4px;
-    }
-    .py-#{$i} {
-      padding-top: $i * 4px;
-      padding-bottom: $i * 4px;
-    }
-  }
-}
-
-@include generate-paddings();
-
+@import "./margin";
+@import "./padding";
+@import "./flex";
+@import "./text";
 .w {
   &-full {
     width: 100%;
@@ -184,6 +110,30 @@
   display: none;
 }
 
-.flex {
-  display: flex;
+.gap {
+  @for $i from 0 through 20 {
+    &-#{$i} {
+      gap: $i * 4px;
+    }
+  }
+}
+
+.divider {
+  border-top: 1px solid $color-border;
+  margin: 40px 0;
+  &--no-space {
+    margin: 0;
+  }
+}
+
+.md {
+  @include media-query("md") {
+    &--hidden {
+      display: none;
+    }
+
+    &--block {
+      display: block;
+    }
+  }
 }

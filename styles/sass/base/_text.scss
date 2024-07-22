@@ -1,0 +1,95 @@
+@import "../utils/with-prefix";
+
+@mixin generate-text($prefix: null) {
+  .#{with-prefix($prefix, "text")} {
+    &--paragraph-lg {
+      @include text-paragraph-lg;
+    }
+
+    &--paragraph-md {
+      @include text-paragraph-md;
+    }
+
+    &--paragraph-sm {
+      @include text-paragraph-sm;
+    }
+
+    &--mono-xl {
+      @include text-mono-xl;
+    }
+
+    &--mono-lg {
+      @include text-mono-lg;
+    }
+
+    &--mono-md {
+      @include text-mono-md;
+    }
+
+    &--mono-sm {
+      @include text-mono-sm;
+    }
+
+    &--label {
+      @include text-label;
+    }
+
+    &--link-lg {
+      @include text-link-lg;
+    }
+
+    &--link-md {
+      @include text-link-md;
+    }
+
+    &-brand {
+      color: $color-accent-brand;
+    }
+
+    &-primary {
+      color: $color-text-primary;
+    }
+
+    &-secondary {
+      color: $color-text-secondary;
+    }
+
+    &-tertiary {
+      color: $color-text-tertiary;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
+    &-justify {
+      text-align: justify;
+    }
+
+    &-uppercase {
+      text-transform: uppercase;
+    }
+
+    &-lowercase {
+      text-transform: lowercase;
+    }
+
+    &-capitalize {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@include generate-text();
+
+@include media-query("md") {
+  @include generate-text("md");
+}

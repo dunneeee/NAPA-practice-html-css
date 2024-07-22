@@ -1,0 +1,102 @@
+@import "./../utils/with-prefix";
+@mixin generate-flex($prefix: null) {
+  .#{with-prefix($prefix, "flex")} {
+    display: flex;
+  }
+
+  .#{with-prefix($prefix, "inline-flex")} {
+    display: inline-flex;
+  }
+
+  .#{with-prefix($prefix, "flex--wrap")} {
+    flex-wrap: wrap;
+  }
+
+  .#{with-prefix($prefix, "flex--nowrap")} {
+    flex-wrap: nowrap;
+  }
+
+  .#{with-prefix($prefix, "justify")} {
+    &-center {
+      justify-content: center;
+    }
+
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-between {
+      justify-content: space-between;
+    }
+
+    &-around {
+      justify-content: space-around;
+    }
+
+    &-evenly {
+      justify-content: space-evenly;
+    }
+
+    &-stretch {
+      justify-content: stretch;
+    }
+
+    &-baseline {
+      justify-content: baseline;
+    }
+  }
+
+  .#{with-prefix($prefix, "items")} {
+    &-center {
+      align-items: center;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-stretch {
+      align-items: stretch;
+    }
+
+    &-baseline {
+      align-items: baseline;
+    }
+  }
+
+  .#{with-prefix($prefix, "self")} {
+    &-center {
+      align-self: center;
+    }
+
+    &-start {
+      align-self: flex-start;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+
+    &-stretch {
+      align-self: stretch;
+    }
+
+    &-baseline {
+      align-self: baseline;
+    }
+  }
+}
+
+@include generate-flex();
+
+@include media-query("md") {
+  @include generate-flex("md");
+}

@@ -61,6 +61,9 @@ h2 {
 // Heading lg
 h3 {
   @include typography(24px, 700, 32px, -0.017em);
+  @include media-query("md") {
+    @include typography(40px, 700, 48px, -0.022em);
+  }
 }
 
 // Heading md
@@ -124,56 +127,6 @@ h5 {
   @include typography(16px, 400, 24px, -0.011em, center, $color-accent-brand);
 }
 
-.text {
-  &--paragraph-lg {
-    @include text-paragraph-lg;
-  }
-
-  &--paragraph-md {
-    @include text-paragraph-md;
-  }
-
-  &--paragraph-sm {
-    @include text-paragraph-sm;
-  }
-
-  &--mono-xl {
-    @include text-mono-xl;
-  }
-
-  &--mono-lg {
-    @include text-mono-lg;
-  }
-
-  &--mono-md {
-    @include text-mono-md;
-  }
-
-  &--mono-sm {
-    @include text-mono-sm;
-  }
-
-  &--label {
-    @include text-label;
-  }
-
-  &--link-lg {
-    @include text-link-lg;
-  }
-
-  &-brand {
-    color: $color-accent-brand;
-  }
-
-  &-primary {
-    color: $color-text-primary;
-  }
-
-  &-secondary {
-    color: $color-text-secondary;
-  }
-
-  &-tertiary {
-    color: $color-text-tertiary;
-  }
+@mixin text-link-md {
+  @include typography(14px, 400, 20px, -0.006em, center, $color-accent-brand);
 }

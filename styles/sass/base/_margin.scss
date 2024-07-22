@@ -1,0 +1,56 @@
+@import "../utils/with-prefix";
+
+@mixin generate-margins($prefix: null) {
+  .#{with-prefix($prefix, "m")} {
+    @for $i from 0 through 20 {
+      &-#{$i} {
+        margin: $i * 4px;
+      }
+
+      &t-#{$i} {
+        margin-top: $i * 4px;
+      }
+
+      &r-#{$i} {
+        margin-right: $i * 4px;
+      }
+
+      &b-#{$i} {
+        margin-bottom: $i * 4px;
+      }
+
+      &l-#{$i} {
+        margin-left: $i * 4px;
+      }
+
+      &x-#{$i} {
+        margin-left: $i * 4px;
+        margin-right: $i * 4px;
+      }
+
+      &y-#{$i} {
+        margin-top: $i * 4px;
+        margin-bottom: $i * 4px;
+      }
+    }
+
+    &-auto {
+      margin: auto;
+    }
+
+    &x-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &l-auto {
+      margin-left: auto;
+    }
+  }
+}
+
+@include generate-margins();
+
+@include media-query("md") {
+  @include generate-margins("md");
+}
